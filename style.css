@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: flex;
+  min-height: 340px;
+  margin-top: 10vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* border: 1px solid gray; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  /* justify-content: center; */
+  /* border: 1px solid green; */
+  margin: 0 auto;
+  gap: 2rem;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.store-p {
+  color: #de3333;
+  font-size: 2rem;
+}
+
+.club-button {
+  color: #de3333;
+  background-color: white;
+  border: 2px solid #de3333;
+  margin-top: auto;
+  padding: 1rem 0;
+  line-height: 1.25rem;
+  font-size: 1.01rem;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 0 3px 5px rgb(222, 51, 51, 0.2);
+  transition: 0.2s all ease-in-out;
+}
+
+.club-button:hover {
+  background-color: rgb(222, 51, 51, 0.2);
+  transform: scale(1.02);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.time {
+  margin-bottom: 1.5rem;
+}
+
+.card.three .time {
+  margin: 0;
+}
+
+@media screen and (max-width: 1040px) {
+  .card-container {
+    flex-direction: column;
+    padding: 0 6rem;
+    gap: 0;
+  }
+  .card {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .time {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card-container {
+    width: 98%;
+    padding: 1rem;
+  }
+  .club-button {
+    padding: 0.5rem 1rem;
+  }
+}
